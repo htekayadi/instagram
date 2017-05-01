@@ -14,6 +14,7 @@
 		271E9BB61EB6CA7F006AAD4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 271E9BB41EB6CA7F006AAD4F /* LaunchScreen.storyboard */; };
 		271E9BC11EB6CA7F006AAD4F /* InstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271E9BC01EB6CA7F006AAD4F /* InstagramTests.swift */; };
 		271E9BCC1EB6CA7F006AAD4F /* InstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271E9BCB1EB6CA7F006AAD4F /* InstagramUITests.swift */; };
+		271E9BDA1EB6CAB3006AAD4F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 271E9BD91EB6CAB3006AAD4F /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		271E9BC71EB6CA7F006AAD4F /* InstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		271E9BCB1EB6CA7F006AAD4F /* InstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramUITests.swift; sourceTree = "<group>"; };
 		271E9BCD1EB6CA7F006AAD4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		271E9BD91EB6CAB3006AAD4F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		271E9B9F1EB6CA7F006AAD4F = {
 			isa = PBXGroup;
 			children = (
+				271E9BD91EB6CAB3006AAD4F /* .gitignore */,
 				271E9BAA1EB6CA7F006AAD4F /* Instagram */,
 				271E9BBF1EB6CA7F006AAD4F /* InstagramTests */,
 				271E9BCA1EB6CA7F006AAD4F /* InstagramUITests */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271E9BDA1EB6CAB3006AAD4F /* .gitignore in Resources */,
 				271E9BB61EB6CA7F006AAD4F /* LaunchScreen.storyboard in Resources */,
 				271E9BB31EB6CA7F006AAD4F /* Assets.xcassets in Resources */,
 				271E9BB11EB6CA7F006AAD4F /* Main.storyboard in Resources */,
