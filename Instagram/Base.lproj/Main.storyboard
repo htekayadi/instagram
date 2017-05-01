@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -392,6 +394,56 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="myv-KA-bWm" id="ylK-5J-UzP">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="877.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="43Z-4V-VPj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="43Z-4V-VPj" secondAttribute="height" multiplier="75:64" id="dhq-4G-tBS"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="W6b-c1-b5Y">
+                                            <rect key="frame" x="20" y="332" width="101" height="22"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ju-mH-gEV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="23" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="23" id="SYc-oy-qZF"/>
+                                                        <constraint firstAttribute="height" constant="22" id="sDG-qp-Krf"/>
+                                                    </constraints>
+                                                    <state key="normal" image="icon-like">
+                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOg-pJ-sJB">
+                                                    <rect key="frame" x="39" y="0.0" width="23" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="23" id="hFD-WO-muK"/>
+                                                        <constraint firstAttribute="height" constant="22" id="zyx-Bn-S2g"/>
+                                                    </constraints>
+                                                    <state key="normal" image="icon-comment">
+                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLx-t9-dYh">
+                                                    <rect key="frame" x="78" y="0.0" width="23" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="23" id="PRm-VB-cTT"/>
+                                                        <constraint firstAttribute="height" constant="22" id="oN4-SS-dLL"/>
+                                                    </constraints>
+                                                    <state key="normal" image="icon-share">
+                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="43Z-4V-VPj" secondAttribute="trailing" id="Ait-FL-o8x"/>
+                                        <constraint firstItem="43Z-4V-VPj" firstAttribute="top" secondItem="ylK-5J-UzP" secondAttribute="top" id="Ley-jL-Dpd"/>
+                                        <constraint firstItem="43Z-4V-VPj" firstAttribute="leading" secondItem="ylK-5J-UzP" secondAttribute="leading" id="gkT-GO-aav"/>
+                                        <constraint firstItem="W6b-c1-b5Y" firstAttribute="top" secondItem="43Z-4V-VPj" secondAttribute="bottom" constant="12" id="uvM-Jp-UG5"/>
+                                        <constraint firstItem="W6b-c1-b5Y" firstAttribute="leading" secondItem="ylK-5J-UzP" secondAttribute="leadingMargin" constant="12" id="vsJ-lA-fnE"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -406,7 +458,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yg0-tO-7x0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1638" y="-1233"/>
+            <point key="canvasLocation" x="1637.5999999999999" y="-1233.2833583208396"/>
         </scene>
         <!--Item-->
         <scene sceneID="dky-Pu-2ly">
@@ -432,12 +484,15 @@
         <image name="duc" width="150" height="150"/>
         <image name="icon-camera" width="25" height="20"/>
         <image name="icon-camera-filled" width="25" height="20"/>
+        <image name="icon-comment" width="23" height="22"/>
         <image name="icon-facebook" width="96" height="96"/>
         <image name="icon-home" width="21" height="20"/>
         <image name="icon-inbox" width="23" height="18"/>
         <image name="icon-inbox-filled" width="23" height="18"/>
+        <image name="icon-like" width="21" height="18"/>
         <image name="icon-profile" width="25" height="25"/>
         <image name="icon-profile-filled" width="25" height="25"/>
+        <image name="icon-share" width="20" height="22"/>
         <image name="icon-tumblr" width="96" height="96"/>
         <image name="icon-twitter" width="100" height="100"/>
     </resources>
